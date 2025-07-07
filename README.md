@@ -10,7 +10,7 @@ Try the live application to see the user registration system in action!
 
 ## Architecture
 
-![Architecture Diagram](architecture%20diagram.svg)
+![Architecture Diagram](architectural%20diagram.svg)
 
 ### System Overview
 This project implements a scalable, cloud-native LAMP stack with the following components:
