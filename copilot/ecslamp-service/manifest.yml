@@ -51,6 +51,15 @@ variables:
 # You can override any of the values defined above by environment.
 environments:
   production:
-     count: 2               # Number of tasks to run for the "test" environment.
+     count: 1               # Number of tasks to run for the "test" environment.
 #    deployment:            # The deployment strategy for the "test" environment.
 #       rolling: 'recreate' # Stops existing tasks before new ones are started for faster deployments.
+
+  dr-prod:
+     count: 1
+     variables:
+       DB_HOST: lamp-app-db-dr.cn8kcow48xsh.eu-west-1.rds.amazonaws.com
+       DB_NAME: ecs_db
+       DB_USER: admin
+       DB_PASSWORD: passwrd116898
+     # deployment:
