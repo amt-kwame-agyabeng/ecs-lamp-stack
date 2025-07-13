@@ -9,12 +9,12 @@ This document outlines the disaster recovery (DR) implementation for the ECS LAM
 ![DR Architecture](DisasterRecoverArchitecture.svg)
 
 
-## Primary Region (eu-central-1 - Frankfurt)*
+## Primary Region (eu-central-1 - Frankfurt)
 - ECS Cluster with LAMP application service (running tasks)
 - Application Load Balancer (ALB)
 - RDS MySQL database (primary, possibly Multi-AZ)
 
-## Disaster Recovery Region (eu-west-1 - Ireland)*
+## Disaster Recovery Region (eu-west-1 - Ireland)
 - ECS Cluster with LAMP application service (scaled to 0 tasks for pilot light)
 - Application Load Balancer (ALB)
 - RDS MySQL read replica (continuously replicating from primary)
